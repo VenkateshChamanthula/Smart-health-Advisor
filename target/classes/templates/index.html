@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Smart Health Advisor</title>
+    <link href="/css/style.css" rel="stylesheet"/>
+    <script src="/js/validation.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Smart Health Advisor</h2>
+    <div class="card">
+        <form name="healthForm" th:action="@{/analyze}" method="post" onsubmit="return validateForm()">
+            <div class="mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" class="form-control" name="age" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Symptoms</label>
+                <input type="text" class="form-control" name="symptoms" placeholder="e.g., headache, fever" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Analyze</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

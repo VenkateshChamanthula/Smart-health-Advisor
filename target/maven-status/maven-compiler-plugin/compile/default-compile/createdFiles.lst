@@ -1,0 +1,4 @@
+com/smarthealth/advisor/model/HealthForm.class
+com/smarthealth/advisor/SmartHealthAdvisorApplication.class
+com/smarthealth/advisor/service/HealthService.class
+com/smarthealth/advisor/controller/HealthController.class
